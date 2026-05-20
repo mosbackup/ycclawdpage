@@ -64,7 +64,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "Do I need to be accredited to invest in Y Combinator startups with YC Clawd?",
-    a: "Not necessarily. ",
+    a: "No. ",
     linkText: "US Regulation A+ (Title IV of the Jumpstart Our Business Startups Act)",
     linkHref: "https://www.sec.gov/rules-regulations/statutes-regulations/jumpstart-our-business-startups-jobs-act",
     aSuffix: " allows investors who do not qualify for accreditation to participate in startup funding, under some conditions.",

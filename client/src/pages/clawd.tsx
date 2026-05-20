@@ -70,7 +70,7 @@ const FAQ_ITEMS = [
     aSuffix: " allows investors who do not qualify for accreditation to participate in startup funding, under some conditions.",
   },
   {
-    q: "Do I need to be a US resident or citizen to invest in YC Clawd?",
+    q: "Do I need to be a US resident or citizen to invest with YC Clawd?",
     a: "No. ",
     linkText: "US regulations allow participation from international investors",
     linkHref: "https://home.treasury.gov/faq-item/international-affairs/can-foreign-investors-still-invest-in-the-united-states-technology-industry",

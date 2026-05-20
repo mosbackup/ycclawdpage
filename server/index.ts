@@ -1,4 +1,4 @@
-  import express, { type Request, Response, NextFunction } from "express";
+import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";
 import { createServer } from "http";
@@ -52,11 +52,19 @@ app.use((req, res, next) => {
       log(logLine);
     }
   });
+
   next();
 });
 
 export const initPromise = (async () => {
   await registerRoutes(httpServer, app);
+
+  if (process.env.NODE_ENV === "production") {
+    serveStatic(app);
+  } else {
+    const { setupVite } = await import("./vite");
+    await setupVite(httpServer, app);
+  }
 
   app.use((err: any, _req: Request, res: Response, next: NextFunction) => {
     const status = err.status || err.statusCode || 500;
@@ -67,13 +75,6 @@ export const initPromise = (async () => {
     }
     return res.status(status).json({ message });
   });
-
-  if (process.env.NODE_ENV === "production") {
-    serveStatic(app);
-  } else {
-    const { setupVite } = await import("./vite");
-    await setupVite(httpServer, app);
-  }
 
   if (process.env.VERCEL !== "1") {
     const port = parseInt(process.env.PORT || "5000", 10);

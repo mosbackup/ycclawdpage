@@ -1,0 +1,95 @@
+[1G[0K⠙[1G[0K
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K⠙[1G[0K12:35:55 PM [express] serving on port 5000
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m

@@ -1,0 +1,65 @@
+[1G[0K⠙[1G[0K
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K⠙[1G[0K12:07:05 PM [express] serving on port 5000
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[2m12:11:32 PM[22m [31m[1m[vite][22m[39m [31m[2m(client)[22m[39m Pre-transform error: Failed to resolve import "@assets/ycclawd-logo.png" from "client/src/pages/clawd.tsx". Does the file exist?
+  Plugin: [35mvite:import-analysis[39m
+  File: [36m/home/runner/workspace/client/src/pages/clawd.tsx[39m:4:25
+[33m  4  |  import { Moon, Sun, Mail, Target } from "lucide-react";
+  5  |  import { useTheme } from "@/hooks/use-theme";
+  6  |  import clawdLogoSrc from "@assets/ycclawd-logo.png";
+     |                            ^
+  7  |  const ACCENT = "#d97554";
+  8  |  const ACCENT2 = "#DA7757";[39m
+[1G[0K⠙[1G[0K[1mnpm[22m [96mnotice[39m
+[1mnpm[22m [96mnotice[39m New [31mmajor[39m version of npm available! [31m10.8.2[39m -> [34m11.14.1[39m
+[1mnpm[22m [96mnotice[39m Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.14.1[39m
+[1mnpm[22m [96mnotice[39m To update run: [4mnpm install -g npm@11.14.1[24m
+[1mnpm[22m [96mnotice[39m
+[1G[0K⠙[1G[0K

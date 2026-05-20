@@ -1,0 +1,186 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K12:12:27 PM [express] serving on port 5000
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+12:13:45 PM [express] GET /api/posts 304 in 331ms :: [{"slug":"p26-startups-leaderboard","title":"YC Spring 2026 Batch: How the Startup Leaderboard Was Obtained by Averaging 10 Different LLMs","description":"A look at the experimental P26 leaderboard methodology, its limitations, and what comes next.","date":"2026-04-29","author":"YC Bench Team","readTime":3},{"slug":"yc-only-funds","title":"YC-Only Funds are the Lowest-Hanging Fruits for Agentic Venture Capital","description":"YC batches offer something rare in venture: structure, data, and fast feedback loops. That makes them the ideal starting point for AI-driven, agentic investing.","date":"2026-04-02","author":"YC Bench Team","readTime":5},{"slug":"ycw26predemoscore","title":"Top 10% YC W26 batch startups — ranked by our Pre-Demo Day Score","description":"As YC W26 approaches Demo Day, the biggest challenge for investors isn’t access—it’s prioritization. ","date":"2026-03-19","author":"YC Bench Team","readTime":4},{"slug":"cohort-relative-evaluation","title":"Why Cohort-Relative Evaluation Is the Best Way to Score Early-Stage Y Combinator Startups","description":"Absolute metrics mislead. Here's why comparing YC startups to their cohort peers unlocks far more predictive signal.","date":"2026-03-12","author":"YC Bench Team","readTime":2},{"slug":"signals-not-narratives","title":"Signals, Not Narratives - How We Cut Through the YC Hype Cycle","description":"YC Bench turns YC batches into a live benchmark for forecasting startup outperformance.","date":"2026-03-08","author":"YC Bench Team","readTime":4}]
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client/clawd:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client/clawd:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client/clawd:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client/clawd:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client/clawd:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m

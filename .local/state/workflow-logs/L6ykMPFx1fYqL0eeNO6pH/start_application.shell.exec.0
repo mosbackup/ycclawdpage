@@ -1,0 +1,17 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K/home/runner/workspace/server/blog.ts:7
+const POSTS_DIR = path.resolve(__dirname, "content/posts");
+                               ^
+
+
+ReferenceError: __dirname is not defined in ES module scope
+    at <anonymous> [90m(/home/runner/workspace/[39mserver/blog.ts:7:32[90m)[39m
+[90m    at ModuleJob.run (node:internal/modules/esm/module_job:325:25)[39m
+[90m    at async ModuleLoader.import (node:internal/modules/esm/loader:606:24)[39m
+[90m    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)[39m
+
+Node.js v20.20.0
+[1G[0K⠙[1G[0K

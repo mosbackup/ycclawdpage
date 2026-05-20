@@ -1,0 +1,89 @@
+Redesign and adapt the existing YC Bench landing page into a new landing page for “YC Clawd”.
+
+Keep the same premium minimalist style, typography hierarchy, spacing, layout rhythm, and overall aesthetic of YC Bench, but rebrand everything for YC Clawd.
+
+Branding:
+
+* Name: YC Clawd
+* Theme inspiration: Claude / Anthropic aesthetic
+* Replace all orange accents with Claude-inspired colors:
+
+  * Primary accent: #d97554
+  * Secondary accent: #DA7757
+* Light mode background: #FAF9F5
+* Dark mode background: #141412
+* Use warm neutral tones, elegant gradients, subtle shadows, and soft borders.
+* Keep the design sophisticated, futuristic, and investor-grade.
+
+Navigation:
+
+* YC Clawd
+* Discord
+* Telegram
+* GitHub
+* Paper
+
+Hero Section:
+Headline:
+“Let YC Clawd invest in top Y Combinator startups for you”
+
+Subheadline:
+“YC Clawd is an agentic VC automatically investing in the top 10% of each YC batch.”
+
+Supporting text:
+“Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of YC startups, like there are ETF tracking Nasdaq 100 and S&P-500 indexes.”
+
+Primary CTA button:
+“Register” (main button: color: #d97554)
+
+Secondary CTA button:
+“Join Telegram group”
+
+FAQ Section:
+
+1. Why top 10%? Why not tracking the average of all YC startups?
+   Answer:
+   “Although YC itself is very selective (99.5% rejection rate), most profits are concentrated in a tiny fraction of YC startups, following a Power law. That's why there's a need to select an elite inside this elite.
+   The choice of 10% reflects a balance between the needs of concentration and diversification.”
+
+2. How to know that YC Clawd is really picking the top YC startups?
+   Answer:
+   “YC Clawd is constantly forward-tested on YC Bench, a live benchmark of YC startups outperformance.”
+   Link YC Bench to:
+   https://www.ycbench.com/
+
+3. Is YC Clawd a crowdfunding platform?
+   Answer:
+   “Yes, but specialized in automated investment in YC startups.”
+
+4. Why YC Clawd and not just Claude?
+   Answer:
+   “Claude is still unreliable for this task. LLMs need to be embedded into an agentic deep search & reasoning workflow to deliver non-random results.”
+   Add link text:
+   “That was discussed in this blog post”
+   Link:
+   https://www.ycbench.com/blog/p26-startups-leaderboard
+
+5. Is YC Clawd code open-source?
+   Answer:
+   “Yes.”
+   Add GitHub link:
+   https://github.com/benstaf/ycclawd
+
+6. Do I need to be accredited to invest in Y Combinator startups with YC Clawd?
+   Answer:
+   “Not necessarily. US Regulation A+ (Title IV of the Jumpstart Our Business Startups Act) allows investors who do not qualify for accreditation to participate in startup funding, under some conditions.”
+   Link:
+   https://www.sec.gov/rules-regulations/statutes-regulations/jumpstart-our-business-startups-jobs-act
+
+7. Do I need to be a US resident or citizen to invest in YC Clawd?
+   Answer:
+   “No. US regulations allow participation from international investors from most countries in the world, including in the tech sector.”
+   Link:
+   https://home.treasury.gov/faq-item/international-affairs/can-foreign-investors-still-invest-in-the-united-states-technology-industry
+
+Footer:
+
+* Same address structure as YC Bench
+* Contact email:
+  [info@ycclawd.com](mailto:info@ycclawd.com)

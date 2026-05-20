@@ -1,0 +1,758 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K12:53:09 PM [express] serving on port 5000
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:53:32 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:53:35 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m [33m(x2)[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:53:56 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:53:59 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m [33m(x2)[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:21 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:54:23 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m [33m(x2)[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m12:58:21 PM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/pages/clawd.tsx, /src/index.css[22m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m
+[33m
+Unable to parse HTML; parse5 error code missing-whitespace-between-attributes
+ at /home/runner/workspace/client:20:43
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                            ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-attribute-name
+ at /home/runner/workspace/client:20:48
+18 |      <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&fam...
+19 |      <script>
+20 |        const saved = localStorage.getItem("theme");
+   |                                                 ^
+21 |        let isDark;
+22 |        if (saved) {[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-equals-sign-before-attribute-name
+ at /home/runner/workspace/client:23:24
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                         ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-character-in-unquoted-attribute-value
+ at /home/runner/workspace/client:23:26
+21 |        let isDark;
+22 |        if (saved) {
+23 |          isDark = saved === "dark";
+   |                           ^
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;[39m
+[33m
+Unable to parse HTML; parse5 error code unexpected-solidus-in-tag
+ at /home/runner/workspace/client:26:34
+24 |        } else {
+25 |          const tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+26 |          isDark = tz === "America/Los_Angeles";
+   |                                   ^
+27 |        }
+28 |        document.documentElement.classList.toggle("dark", isDark);[39m

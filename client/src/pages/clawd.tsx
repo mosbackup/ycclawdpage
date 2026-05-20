@@ -401,7 +401,7 @@ export default function Clawd() {
               {[
                 { step: "1", title: "YC Clawd Due Diligence", desc: "An agentic Claude workflow performs deep search and reasoning across each YC batch, scoring startups on cohort-relative signals." },
                 { step: "2", title: "Top 10% Selected", desc: "The system selects the top 10% of each cohort — those with the strongest execution velocity before Demo Day." },
-                { step: "3", title: "Automatic Investment", desc: "YC Clawd automatically invests on your behalf in the selected startups, building a diversified YC outperformer portfolio." },
+                { step: "3", title: "Automatic Investment", desc: "YC Clawd automatically invests for you in the selected startups, building a diversified YC outperformer portfolio." },
               ].map((item) => (
                 <div
                   key={item.step}

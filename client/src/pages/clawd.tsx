@@ -283,7 +283,7 @@ export default function Clawd() {
             className="text-base mb-12 max-w-2xl mx-auto leading-relaxed"
             style={{ color: theme === "dark" ? "#7a7873" : "#8a8880" }}
           >
-            Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of Y Combinator startups, like ETFs tracking Nasdaq 100 and S&P 500.
+            Think of YC Clawd as a kind of YC-10 ETF, tracking the top 10% of Y Combinator startups, like ETFs tracking Nasdaq 100 and S&P 500.
           </p>
 
           <div id="register" className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -1,9 +1,12 @@
 const { app, initPromise } = require("../dist/index.cjs");
 
 module.exports = async (req, res) => {
-  await initPromise;
+  try {
+    await initPromise;
+  } catch(e) {
+    return res.status(500).json({ error: "initPromise failed", message: e.message, stack: e.stack });
+  }
 
-  // Debug after init
   if (req.url === "/__debug") {
     const path = require("path");
     const fs = require("fs");

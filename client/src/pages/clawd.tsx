@@ -63,6 +63,11 @@ const FAQ_ITEMS = [
     aSuffix: ".",
   },
   {
+    q: "What is YC Clawd check size?",
+    a: "500k USD,
+    link: null,
+  },
+  {
     q: "Do I need to be accredited to invest in Y Combinator startups with YC Clawd?",
     a: "No. ",
     linkText: "US Regulation A+ (Title IV of the Jumpstart Our Business Startups Act)",

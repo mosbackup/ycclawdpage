@@ -249,7 +249,7 @@ export default function Clawd() {
               {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
             </button>
             <a
-              href="#register"
+              href="https://forms.gle/QCmqpN3F5yVJwi8x7"
               onClick={() => setMenuOpen(false)}
               className="px-6 py-2 rounded-full text-sm font-semibold text-white text-center transition-opacity hover:opacity-90"
               style={{ background: ACCENT }}
@@ -276,19 +276,19 @@ export default function Clawd() {
             className="text-xl mb-6 max-w-2xl mx-auto leading-relaxed"
             style={{ color: theme === "dark" ? "#a09e98" : "#6b6963" }}
           >
-            YC Clawd is an agentic VC automatically investing in the top 10% of each YC batch.
+            YC Clawd is an agentic VC that automatically invests in the top 10% of each YC batch.
           </p>
 
           <p
             className="text-base mb-12 max-w-2xl mx-auto leading-relaxed"
             style={{ color: theme === "dark" ? "#7a7873" : "#8a8880" }}
           >
-            Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of Y Combinator startups, like ETFs tracking Nasdaq 100 and S&P-500.
+            Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of Y Combinator startups, like ETFs tracking Nasdaq 100 and S&P 500.
           </p>
 
           <div id="register" className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="https://forms.gle/oYh3teZ8xU7QrvN18"
+              href="https://forms.gle/QCmqpN3F5yVJwi8x7"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-10 py-4 rounded-lg text-base font-semibold text-white transition-opacity hover:opacity-90 shadow-lg"
@@ -507,7 +507,7 @@ export default function Clawd() {
         >
           <div className="max-w-3xl mx-auto px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to invest in the top 10%?
+              Ready to invest in the top 10% of YC?
             </h2>
             <p className="text-white/80 text-lg mb-8 max-w-xl mx-auto">
               Register now for early access to YC Clawd and start building your YC outperformer portfolio.
@@ -603,7 +603,7 @@ export default function Clawd() {
             <span className="text-2xl tracking-tight" style={{ fontFamily: '"Playfair Display", Georgia, serif', fontWeight: 700, color: theme === "dark" ? "#F5F3EE" : "#1a1916", marginLeft: '-14px' }}>Clawd</span>
           </div>
           <p className="text-sm text-center" style={{ color: theme === "dark" ? "#6b6963" : "#9a9891" }}>
-            An agentic VC automatically investing in the top 10% of each Y Combinator batch.
+            An agentic VC that automatically invests in the top 10% of each Y Combinator batch.
           </p>
           <div className="flex items-center gap-4">
             <a href="https://discord.gg/ekrySuRBf4" target="_blank" rel="noopener noreferrer" style={{ color: theme === "dark" ? "#6b6963" : "#9a9891" }} className="hover:opacity-80 transition-opacity"><DiscordIcon className="w-5 h-5" /></a>

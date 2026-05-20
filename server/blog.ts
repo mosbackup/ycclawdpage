@@ -1,13 +1,14 @@
-
 import fs from "fs";
 import path from "path";
-import { fileURLToPath } from "url";
 import matter from "gray-matter";
 import sanitizeHtml from "sanitize-html";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const POSTS_DIR = path.resolve(__dirname, "../content/posts");
+// In the CJS build, __dirname = dist/  → posts are at dist/content/posts
+// In dev (tsx), __dirname = server/    → posts are at content/posts (project root)
+const POSTS_DIR = path.join(
+  __dirname,
+  process.env.NODE_ENV === "production" ? "content/posts" : "../content/posts"
+);
 
 export interface PostMeta {
   slug: string;
@@ -33,9 +34,7 @@ async function parsePost(filename: string): Promise<Post | null> {
   const filePath = path.join(POSTS_DIR, filename);
   const raw = fs.readFileSync(filePath, "utf-8");
   const { data, content } = matter(raw);
-
   if (!data.title || !data.date) return null;
-
   const html = sanitizeHtml(marked(content) as string, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat([
       "h1", "h2", "h3", "h4", "h5", "h6", "img", "pre", "code",
@@ -48,7 +47,6 @@ async function parsePost(filename: string): Promise<Post | null> {
       pre: ["class"],
     },
   });
-
   return {
     slug,
     title: data.title,
@@ -62,10 +60,8 @@ async function parsePost(filename: string): Promise<Post | null> {
 
 export async function getAllPosts(): Promise<PostMeta[]> {
   if (!fs.existsSync(POSTS_DIR)) return [];
-
   const files = fs.readdirSync(POSTS_DIR).filter((f) => f.endsWith(".md"));
   const posts = await Promise.all(files.map((f) => parsePost(f)));
-
   return posts
     .filter((p): p is Post => p !== null)
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())

@@ -56,7 +56,7 @@ app.use((req, res, next) => {
   next();
 });
 
-export const initPromise = (async () => {
+(async () => {
   await registerRoutes(httpServer, app);
 
   if (process.env.NODE_ENV === "production") {

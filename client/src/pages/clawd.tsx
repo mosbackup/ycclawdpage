@@ -64,7 +64,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "What is YC Clawd check size?",
-    a: "500k USD,
+    a: "1M USD",
     link: null,
   },
   {

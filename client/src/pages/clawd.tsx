@@ -359,7 +359,7 @@ export default function Clawd() {
               className="text-lg leading-relaxed max-w-2xl mx-auto"
               style={{ color: theme === "dark" ? "#a09e98" : "#6b6963" }}
             >
-              YC startup returns follow a power law - the top 10% generate most of the returns. YC Clawd uses an agentic deep search and reasoning workflow to identify these outperformers, then automatically invests in them.
+              YC startup returns follow a power law - the top 10% generate most of the returns. YC Clawd uses an agentic deep research workflow to identify these outperformers, then automatically invests in them.
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">

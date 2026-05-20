@@ -33,7 +33,7 @@ const PaperIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 const FAQ_ITEMS = [
   {
     q: "Why top 10%? Why not tracking the average of all YC startups?",
-    a: "Although YC itself is very selective (99.5% rejection rate), most profits are concentrated in a tiny fraction of YC startups, following a Power law. That's why there's a need to select an elite inside this elite. The choice of 10% reflects a balance between the needs of concentration and diversification.",
+    a: "Although YC itself is very selective (99.5% rejection rate), most profits are concentrated in a tiny fraction of YC startups, following a Power law. That's why there's a need to select an elite inside this elite. The choice of 10% reflects a balance between concentration and diversification.",
     link: null,
   },
   {
@@ -268,7 +268,7 @@ export default function Clawd() {
             style={{ color: theme === "dark" ? "#F5F3EE" : "#1a1916" }}
           >
             Let YC Clawd invest in top{" "}
-            <span style={{ color: ACCENT }}>Y Combinator startups</span>{" "}
+            <span style={{ color: ACCENT }}>YC startups</span>{" "}
             for you
           </h1>
 
@@ -283,7 +283,7 @@ export default function Clawd() {
             className="text-base mb-12 max-w-2xl mx-auto leading-relaxed"
             style={{ color: theme === "dark" ? "#7a7873" : "#8a8880" }}
           >
-            Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of YC startups, like there are ETF tracking Nasdaq 100 and S&P-500 indexes.
+            Think of YC Clawd as a kind of YC-10 ETF, tracking top 10% of Y Combinator startups, like ETFs tracking Nasdaq 100 and S&P-500.
           </p>
 
           <div id="register" className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -346,7 +346,7 @@ export default function Clawd() {
             className="text-3xl md:text-4xl font-bold mb-8"
             style={{ color: theme === "dark" ? "#F5F3EE" : "#1a1916" }}
           >
-            The YC-10 ETF Concept
+            Invest in a YC-10 ETF
           </h2>
           <div className="space-y-6">
             <p
@@ -359,14 +359,14 @@ export default function Clawd() {
               className="text-lg leading-relaxed max-w-2xl mx-auto"
               style={{ color: theme === "dark" ? "#a09e98" : "#6b6963" }}
             >
-              YC startup returns follow a power law — the top 10% generate most of the returns. YC Clawd uses an agentic deep search and reasoning workflow to identify these outperformers before Demo Day, then automatically invests on your behalf.
+              YC startup returns follow a power law - the top 10% generate most of the returns. YC Clawd uses an agentic deep search and reasoning workflow to identify these outperformers, then automatically invests in them.
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { label: "Startups analyzed", value: "500+", desc: "per YC batch" },
+              { label: "Startups analyzed", value: "200+", desc: "per YC batch" },
               { label: "Target allocation", value: "Top 10%", desc: "per cohort" },
-              { label: "Evaluation cycle", value: "90 days", desc: "forward-tested" },
+              { label: "Investment frequency", value: "90 days", desc: "forward-tested" },
             ].map((stat) => (
               <div
                 key={stat.label}

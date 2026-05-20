@@ -49,7 +49,7 @@ const FAQ_ITEMS = [
     link: null,
   },
   {
-    q: "Why YC Clawd and not just Claude?",
+    q: "Why YC Clawd and not plain Claude?",
     a: "Claude is still unreliable for this task. LLMs need to be embedded into an agentic deep research workflow to deliver non-random results. ",
     linkText: "That was discussed in this blog post",
     linkHref: "https://www.ycbench.com/blog/p26-startups-leaderboard",

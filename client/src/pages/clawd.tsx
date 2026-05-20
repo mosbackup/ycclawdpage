@@ -399,7 +399,7 @@ export default function Clawd() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
               <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-[2px]" style={{ background: theme === "dark" ? "rgba(255,255,255,0.06)" : "rgba(0,0,0,0.06)" }}></div>
               {[
-                { step: "1", title: "YC Clawd Due Diligence", desc: "An agentic Claude workflow performs deep search and reasoning across each YC batch, scoring startups on cohort-relative signals." },
+                { step: "1", title: "YC Clawd Due Diligence", desc: "An agentic Claude workflow performs deep research across each YC batch, scoring startups on cohort-relative signals." },
                 { step: "2", title: "Top 10% Selected", desc: "The system selects the top 10% of each cohort — those with the strongest execution velocity before Demo Day." },
                 { step: "3", title: "Automatic Investment", desc: "YC Clawd automatically invests for you in the selected startups, building a diversified YC outperformer portfolio." },
               ].map((item) => (

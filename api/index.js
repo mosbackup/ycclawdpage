@@ -1,29 +1,47 @@
 const { app, initPromise } = require("../dist/index.cjs");
 
-// Add debug route BEFORE initPromise
 app.get("/__debug", (req, res) => {
   const path = require("path");
   const fs = require("fs");
   
-  const cwd = process.cwd();
-  const dirname = __dirname;
-  const distPublic1 = path.resolve(cwd, "dist/public");
-  const distPublic2 = path.resolve(dirname, "../dist/public");
-  const distPublic3 = path.resolve(dirname, "public");
+  const distPublic = path.resolve(process.cwd(), "dist/public");
+  const indexHtml = path.resolve(distPublic, "index.html");
+
+  let distPublicLs = [];
+  let indexHtmlExists = false;
+  let indexHtmlSize = null;
+  let indexHtmlPreview = null;
+
+  try {
+    distPublicLs = fs.readdirSync(distPublic);
+  } catch(e) {
+    distPublicLs = [`ERROR: ${e.message}`];
+  }
+
+  try {
+    indexHtmlExists = fs.existsSync(indexHtml);
+    if (indexHtmlExists) {
+      const stat = fs.statSync(indexHtml);
+      indexHtmlSize = stat.size;
+      indexHtmlPreview = fs.readFileSync(indexHtml, "utf8").slice(0, 200);
+    }
+  } catch(e) {
+    indexHtmlPreview = `ERROR: ${e.message}`;
+  }
+
+  const layers = app._router?.stack?.map(l => ({
+    name: l.name,
+    regexp: l.regexp?.toString().slice(0, 60),
+  })) ?? [];
 
   res.json({
-    cwd,
-    dirname,
-    env: process.env.NODE_ENV,
-    vercel: process.env.VERCEL,
-    paths: {
-      "cwd/dist/public": { path: distPublic1, exists: fs.existsSync(distPublic1) },
-      "dirname/../dist/public": { path: distPublic2, exists: fs.existsSync(distPublic2) },
-      "dirname/public": { path: distPublic3, exists: fs.existsSync(distPublic3) },
-    },
-    // What files are actually available?
-    dirnameLs: fs.readdirSync(dirname).slice(0, 20),
-    cwdLs: fs.readdirSync(cwd).slice(0, 20),
+    distPublic,
+    distPublicLs,
+    indexHtml,
+    indexHtmlExists,
+    indexHtmlSize,
+    indexHtmlPreview,
+    middlewareLayers: layers,
   });
 });
 

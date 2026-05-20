@@ -366,7 +366,7 @@ export default function Clawd() {
             {[
               { label: "Startups analyzed", value: "200+", desc: "per YC batch" },
               { label: "Target allocation", value: "Top 10%", desc: "per cohort" },
-              { label: "Forward-testing period", value: "90 days", desc: "every batch" },
+              { label: "Forward-testing cycle", value: "90 days", desc: "every batch" },
             ].map((stat) => (
               <div
                 key={stat.label}

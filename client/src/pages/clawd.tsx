@@ -51,11 +51,6 @@ const FAQ_ITEMS = [
   aSuffix:
     ". It shows belonging to an elite inside the elite. Likewise, Nobel Prize winners rarely refuse the prize.",
 },
-    {
-    q: "What is YC Clawd check size?",
-    a: "1M USD",
-    link: null,
-  },
   {
     q: "Is YC Clawd a crowdfunding platform?",
     a: "Yes, but specialized in automated investment in YC startups.",
@@ -379,7 +374,7 @@ export default function Clawd() {
             {[
               { label: "Startups analyzed", value: "200+", desc: "per YC batch" },
               { label: "Target allocation", value: "Top 10%", desc: "per cohort" },
-              { label: "Forward-testing cycle", value: "90 days", desc: "every batch" },
+              { label: "Check size", value: "$1M", desc: "per deal" },
             ].map((stat) => (
               <div
                 key={stat.label}

@@ -51,6 +51,11 @@ const FAQ_ITEMS = [
   aSuffix:
     ". It shows belonging to an elite inside the elite. Likewise, Nobel Prize winners rarely refuse the prize.",
 },
+    {
+    q: "What is YC Clawd check size?",
+    a: "1M USD",
+    link: null,
+  },
   {
     q: "Is YC Clawd a crowdfunding platform?",
     a: "Yes, but specialized in automated investment in YC startups.",
@@ -69,11 +74,6 @@ const FAQ_ITEMS = [
     linkText: "GitHub",
     linkHref: "https://github.com/benstaf/ycclawd",
     aSuffix: ".",
-  },
-  {
-    q: "What is YC Clawd check size?",
-    a: "1M USD",
-    link: null,
   },
   {
     q: "Do I need to be accredited to invest in Y Combinator startups with YC Clawd?",

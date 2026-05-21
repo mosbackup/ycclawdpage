@@ -33,7 +33,7 @@ const PaperIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
 const FAQ_ITEMS = [
   {
     q: "Why top 10%? Why not tracking the average of all YC startups?",
-    a: "Although YC itself is very selective (99.5% rejection rate), most profits are concentrated in a tiny fraction of YC startups, following a Power law. That's why there's a need to select an elite inside this elite. The choice of 10% reflects a balance between concentration and diversification.",
+    a: "Although YC itself is very selective (99.5% rejection rate), most profits are concentrated in a tiny fraction of YC startups, following a Power law. The choice of 10% reflects a balance between concentration and diversification.",
     link: null,
   },
   {

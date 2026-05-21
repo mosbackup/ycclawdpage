@@ -45,7 +45,7 @@ const FAQ_ITEMS = [
   },
   {
   q: "What about access? Why do top YC founders accept YC Clawd on their cap table, alongside other top-tier VCs?",
-  a: "Because being backed by YC Clawd is a strong signal of being a YC outperformer, according to ",
+  a: "YC Clawd backing is a strong signal of being a YC outperformer, according to ",
   linkText: "YC Bench startup leaderboard",
   linkHref: "https://www.ycbench.com/#startupsleaderboard",
   aSuffix:

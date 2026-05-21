@@ -44,6 +44,14 @@ const FAQ_ITEMS = [
     aSuffix: ", a live benchmark of YC startups outperformance.",
   },
   {
+  q: "What about access? Why do top YC founders accept YC Clawd inside their cap table, alongside other top-tier VCs?",
+  a: "Because being backed by YC Clawd is a strong signal of being a YC outperformer, according to ",
+  linkText: "YC Bench startup leaderboard",
+  linkHref: "https://www.ycbench.com/#startupsleaderboard",
+  aSuffix:
+    ". It shows belonging to an elite inside the elite. Likewise, Nobel Prize winners rarely refuse the prize.",
+},
+  {
     q: "Is YC Clawd a crowdfunding platform?",
     a: "Yes, but specialized in automated investment in YC startups.",
     link: null,

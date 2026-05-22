@@ -674,16 +674,18 @@ export default function Clawd() {
             <img src={clawdLogoSrc} alt="YC Clawd" className="w-28 h-28 object-contain" />
             {/* Footer wordmark: same geometric sans as nav */}
             <span
-              className="text-2xl tracking-tight"
-              style={{
-                fontFamily: FONT_HEADING,
-                fontWeight: 700,
-                color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-                marginLeft: "-14px",
-              }}
-            >
-              Clawd
-            </span>
+  className="text-2xl tracking-tight"
+  style={{
+    fontFamily: FONT_HEADING,
+    fontWeight: 600,
+    marginLeft: "-12px",
+    letterSpacing: "0.01em",
+    textRendering: "optimizeLegibility",
+    WebkitFontSmoothing: "antialiased",
+  }}
+>
+  Clawd
+</span>
           </div>
           <p className="text-sm text-center" style={{ color: theme === "dark" ? "#6b6963" : "#9a9891" }}>
             An agentic VC that automatically invests in the top 10% of each Y Combinator batch.

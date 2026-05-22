@@ -8,7 +8,7 @@ const ACCENT2 = "#DA7757";
 
 // Font stacks matching Claude's typographic style
 const FONT_WORDMARK = '"Plus Jakarta Sans", sans-serif';   // replaces Playfair Display — geometric sans like Styrene B
-const FONT_HEADING  = '"Lora", "Source Serif 4", Georgia, serif'; // transitional serif like Galaxie Copernicus
+const FONT_HEADING = '"EB Garamond", Georgia, serif'; // transitional serif like Galaxie Copernicus
 const FONT_BODY     = '"Plus Jakarta Sans", sans-serif';   // clean geometric sans for UI
 const FONT_MONO     = '"JetBrains Mono", monospace';
 

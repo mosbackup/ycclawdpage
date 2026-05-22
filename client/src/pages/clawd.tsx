@@ -141,7 +141,7 @@ export default function Clawd() {
             <span
               className="text-2xl tracking-tight"
               style={{
-                fontFamily: FONT_WORDMARK,
+                fontFamily: FONT_HEADING,
                 fontWeight: 700,
                 marginLeft: "-12px",
               }}
@@ -673,7 +673,7 @@ export default function Clawd() {
             <span
               className="text-2xl tracking-tight"
               style={{
-                fontFamily: FONT_WORDMARK,
+                fontFamily: FONT_HEADING,
                 fontWeight: 700,
                 color: theme === "dark" ? "#F5F3EE" : "#1a1916",
                 marginLeft: "-14px",

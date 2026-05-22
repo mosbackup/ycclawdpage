@@ -139,15 +139,18 @@ export default function Clawd() {
             />
             {/* Wordmark: geometric sans (like Claude's Styrene B nav font) */}
             <span
-              className="text-2xl tracking-tight"
-              style={{
-                fontFamily: FONT_HEADING,
-                fontWeight: 700,
-                marginLeft: "-12px",
-              }}
-            >
-              Clawd
-            </span>
+  className="text-2xl tracking-tight"
+  style={{
+    fontFamily: FONT_HEADING,
+    fontWeight: 600,
+    marginLeft: "-12px",
+    letterSpacing: "0.01em",
+    textRendering: "optimizeLegibility",
+    WebkitFontSmoothing: "antialiased",
+  }}
+>
+  Clawd
+</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">

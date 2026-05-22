@@ -265,12 +265,17 @@ export default function Clawd() {
         <section className="px-4 sm:px-6 lg:px-8 pt-20 pb-16 max-w-5xl mx-auto text-center">
           {/* h1: transitional serif like Claude's Galaxie Copernicus headings */}
           <h1
-            className="text-5xl md:text-7xl font-bold tracking-tight mb-6 max-w-4xl mx-auto leading-tight"
-            style={{
-              fontFamily: FONT_HEADING,
-              color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-            }}
-          >
+  className="text-5xl md:text-7xl tracking-tight mb-6 max-w-4xl mx-auto leading-[0.95]"
+  style={{
+    fontFamily: FONT_HEADING,
+    fontWeight: 500, // ← key change
+    letterSpacing: "-0.03em", // ← important
+    color: theme === "dark" ? "#F5F3EE" : "#1a1916",
+    textRendering: "optimizeLegibility",
+    WebkitFontSmoothing: "antialiased",
+    MozOsxFontSmoothing: "grayscale",
+  }}
+>
             Let YC Clawd invest in top{" "}
             <span style={{ color: ACCENT }}>YC startups</span>{" "}
             for you

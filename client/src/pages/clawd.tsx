@@ -158,7 +158,7 @@ export default function Clawd() {
               { href: "https://github.com/benstaf/ycclawd", label: "GitHub", icon: <GithubIcon />, testId: "link-github" },
               { href: "https://arxiv.org/abs/2604.02378", label: "Paper", icon: <PaperIcon />, testId: "link-paper" },
             ].map(item => (
-              
+                   <a
                 key={item.label}
                 href={item.href}
                 target="_blank"

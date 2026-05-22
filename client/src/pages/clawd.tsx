@@ -6,10 +6,9 @@ import clawdLogoSrc from "@assets/ycclawd-logo.png";
 const ACCENT = "#d97554";
 const ACCENT2 = "#DA7757";
 
-// Font stacks matching Claude's typographic style
-const FONT_WORDMARK = '"Plus Jakarta Sans", sans-serif';   // replaces Playfair Display — geometric sans like Styrene B
-const FONT_HEADING = '"EB Garamond", Georgia, serif'; // transitional serif like Galaxie Copernicus
-const FONT_BODY     = '"Plus Jakarta Sans", sans-serif';   // clean geometric sans for UI
+const FONT_WORDMARK = '"Plus Jakarta Sans", sans-serif';
+const FONT_HEADING = '"EB Garamond", Georgia, serif';
+const FONT_BODY     = '"Plus Jakarta Sans", sans-serif';
 const FONT_MONO     = '"JetBrains Mono", monospace';
 
 const GithubIcon = ({ className = "w-4 h-4" }: { className?: string }) => (
@@ -92,6 +91,17 @@ const FAQ_ITEMS = [
   },
 ];
 
+// Shared heading style matching the h1: thin EB Garamond, tight tracking
+const headingStyle = (theme: string, color?: string): React.CSSProperties => ({
+  fontFamily: FONT_HEADING,
+  fontWeight: 500,
+  letterSpacing: "-0.03em",
+  color: color ?? (theme === "dark" ? "#F5F3EE" : "#1a1916"),
+  textRendering: "optimizeLegibility",
+  WebkitFontSmoothing: "antialiased",
+  MozOsxFontSmoothing: "grayscale",
+});
+
 export default function Clawd() {
   const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
@@ -137,20 +147,19 @@ export default function Clawd() {
               alt="YC Clawd"
               className="w-24 h-24 object-contain"
             />
-            {/* Wordmark: geometric sans (like Claude's Styrene B nav font) */}
             <span
-  className="text-2xl tracking-tight"
-  style={{
-    fontFamily: FONT_HEADING,
-    fontWeight: 600,
-    marginLeft: "-12px",
-    letterSpacing: "0.01em",
-    textRendering: "optimizeLegibility",
-    WebkitFontSmoothing: "antialiased",
-  }}
->
-  Clawd
-</span>
+              className="text-2xl tracking-tight"
+              style={{
+                fontFamily: FONT_HEADING,
+                fontWeight: 600,
+                marginLeft: "-12px",
+                letterSpacing: "0.01em",
+                textRendering: "optimizeLegibility",
+                WebkitFontSmoothing: "antialiased",
+              }}
+            >
+              Clawd
+            </span>
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -263,19 +272,10 @@ export default function Clawd() {
       <main className="pt-24">
         {/* Hero */}
         <section className="px-4 sm:px-6 lg:px-8 pt-20 pb-16 max-w-5xl mx-auto text-center">
-          {/* h1: transitional serif like Claude's Galaxie Copernicus headings */}
           <h1
-  className="text-5xl md:text-7xl tracking-tight mb-6 max-w-4xl mx-auto leading-[0.95]"
-  style={{
-    fontFamily: FONT_HEADING,
-    fontWeight: 500, // ← key change
-    letterSpacing: "-0.03em", // ← important
-    color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-    textRendering: "optimizeLegibility",
-    WebkitFontSmoothing: "antialiased",
-    MozOsxFontSmoothing: "grayscale",
-  }}
->
+            className="text-5xl md:text-7xl mb-6 max-w-4xl mx-auto leading-[0.95]"
+            style={headingStyle(theme)}
+          >
             Let YC Clawd invest in top{" "}
             <span style={{ color: ACCENT }}>YC startups</span>{" "}
             for you
@@ -358,11 +358,8 @@ export default function Clawd() {
         {/* Value Proposition */}
         <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-8"
-            style={{
-              fontFamily: FONT_HEADING,
-              color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-            }}
+            className="text-3xl md:text-4xl mb-8"
+            style={headingStyle(theme)}
           >
             Invest in a YC-10 ETF
           </h2>
@@ -395,8 +392,8 @@ export default function Clawd() {
                 }}
               >
                 <div
-                  className="text-4xl font-bold mb-2"
-                  style={{ color: ACCENT, fontFamily: FONT_HEADING }}
+                  className="text-4xl mb-2"
+                  style={{ color: ACCENT, fontFamily: FONT_HEADING, fontWeight: 500, letterSpacing: "-0.03em" }}
                 >
                   {stat.value}
                 </div>
@@ -427,11 +424,8 @@ export default function Clawd() {
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-4"
-                style={{
-                  fontFamily: FONT_HEADING,
-                  color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-                }}
+                className="text-3xl md:text-4xl mb-4"
+                style={headingStyle(theme)}
               >
                 How It Works
               </h2>
@@ -474,11 +468,8 @@ export default function Clawd() {
                     {item.step}
                   </div>
                   <h3
-                    className="text-xl font-semibold mb-3"
-                    style={{
-                      fontFamily: FONT_HEADING,
-                      color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-                    }}
+                    className="text-xl mb-3"
+                    style={headingStyle(theme)}
                   >
                     {item.title}
                   </h3>
@@ -497,11 +488,8 @@ export default function Clawd() {
         {/* FAQ */}
         <section className="py-24 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-12 text-center"
-            style={{
-              fontFamily: FONT_HEADING,
-              color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-            }}
+            className="text-3xl md:text-4xl mb-12 text-center"
+            style={headingStyle(theme)}
           >
             Frequently Asked Questions
           </h2>
@@ -570,8 +558,14 @@ export default function Clawd() {
         >
           <div className="max-w-3xl mx-auto px-8 text-center">
             <h2
-              className="text-3xl md:text-4xl font-bold text-white mb-4"
-              style={{ fontFamily: FONT_HEADING }}
+              className="text-3xl md:text-4xl text-white mb-4"
+              style={{
+                fontFamily: FONT_HEADING,
+                fontWeight: 500,
+                letterSpacing: "-0.03em",
+                textRendering: "optimizeLegibility",
+                WebkitFontSmoothing: "antialiased",
+              }}
             >
               Ready to invest in the top 10% of YC?
             </h2>
@@ -611,11 +605,8 @@ export default function Clawd() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <h3
-                className="text-3xl font-bold mb-8"
-                style={{
-                  fontFamily: FONT_HEADING,
-                  color: theme === "dark" ? "#F5F3EE" : "#1a1916",
-                }}
+                className="text-3xl mb-8"
+                style={headingStyle(theme)}
               >
                 Contact Us
               </h3>
@@ -677,20 +668,19 @@ export default function Clawd() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center">
             <img src={clawdLogoSrc} alt="YC Clawd" className="w-28 h-28 object-contain" />
-            {/* Footer wordmark: same geometric sans as nav */}
             <span
-  className="text-2xl tracking-tight"
-  style={{
-    fontFamily: FONT_HEADING,
-    fontWeight: 600,
-    marginLeft: "-12px",
-    letterSpacing: "0.01em",
-    textRendering: "optimizeLegibility",
-    WebkitFontSmoothing: "antialiased",
-  }}
->
-  Clawd
-</span>
+              className="text-2xl tracking-tight"
+              style={{
+                fontFamily: FONT_HEADING,
+                fontWeight: 600,
+                marginLeft: "-12px",
+                letterSpacing: "0.01em",
+                textRendering: "optimizeLegibility",
+                WebkitFontSmoothing: "antialiased",
+              }}
+            >
+              Clawd
+            </span>
           </div>
           <p className="text-sm text-center" style={{ color: theme === "dark" ? "#6b6963" : "#9a9891" }}>
             An agentic VC that automatically invests in the top 10% of each Y Combinator batch.
